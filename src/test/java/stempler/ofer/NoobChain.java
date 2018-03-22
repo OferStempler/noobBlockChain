@@ -15,6 +15,8 @@ import java.util.ArrayList;
 public class NoobChain {
 
     public static ArrayList<Block> blockchain = new ArrayList<Block>();
+    public static HashMap<String, TransactionOutputs> UTXOs = new HashMap<String,TransactionOutputs>(); //list of all unspent transactions.
+
     public static int difficulty = 0;
     public static Wallet walletA;
     public static Wallet walletB;
